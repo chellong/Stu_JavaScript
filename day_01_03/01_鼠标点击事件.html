@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    function init(){
+
+        var btn = document.getElementById("btn");
+        var btn_1 = document.getElementById("btn_1");
+        var img = document.getElementById("img");
+
+        btn.onclick = function (){
+            img.style.display = "none";
+            this.disabled = "true";
+        }
+        btn_1.onclick = function (){
+            img.style.display = "block";
+            var btn = document.getElementById("btn");
+            btn.removeAttribute("disabled");
+        }
+
+        function fun_21(obj){
+            obj.value = "新浪" ;
+        }
+
+        function fun_3(){
+            var p = document.getElementById("p") ;
+            p.innerHTML = "<img src = 'images/photo_05.jpg' >" ;
+        }
+
+        function fun_4(){
+            var btn2 = document.getElementById("btn_2") ;
+            btn2.removeAttribute("onclick") ;
+        }
+
+    }
+
+</script>
+<body onload="init()">
+
+    <img src="images/photo_02.jpg" id="img">
+    <input type="button" value="隐藏图片" id="btn">
+    <input type="button" value="显示图片" id="btn_1">
+    <input type="button" value="搜狐"  id = "btn_2" onclick = "fun_21(this)">
+    <input type="button" value="添加一副图片"  id = "btn_3" onclick = "fun_3()">
+    <input type="button" value="去掉搜狐按钮的单击事件"  id = "btn_4" onclick = "fun_4()">
+    <p id = "p"></p>
+</body>
+</html>
