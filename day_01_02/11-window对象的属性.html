@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-window对象的属性</title>
+</head>
+
+<script type="text/javascript">
+
+    //1.innerHeight 返回文本框的高度
+    //2.innerWidth  返回文本框的宽度
+        // ie不支持，通用写法
+    //3. outerheight  包括了工具栏，菜单栏等的高度
+    //4. outerwidth   包括滚动条的宽度
+    function fun(){
+        var x = window.document.body.clientWidth;
+        var y = window.document.body.clientHeight;
+
+        alert(x,y);
+    }
+
+
+</script>
+<body onload="fun()">
+
+</body>
+</html>
