@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+	<script type="text/javascript">
+	<!--
+		function Person(){
+			var name = "张三" ;  //是私有属性
+			this.age = 20 ;   //定义公有属性
+		}
+
+		var p = new Person() ;
+		p.weight = "180" ;   //私有属性，只有p对象有
+		//alert(p.name) ; //弹不出来
+		//alert(p.age);
+
+		var p1 = new Person() ;
+		//alert(p1.age) ;
+		//alert(p1.weight);   //私有属性
+		
+
+		function fun(){
+			//拿到p标签对象
+			var p = document.getElementById("p");
+
+			//随意给p对象定义属性
+			p.name = "哈哈" ;
+
+			//alert(p.name) ;
+
+			p.innerHTML = p.name ;
+		}
+	//-->
+	</script>
+ <body>
+	  <p id = "p" onclick = "fun()">你好</p>
+ </body>
+</html>
