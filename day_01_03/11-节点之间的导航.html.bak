@@ -41,7 +41,7 @@
 		//拿到tbody节点
 		//var tbody = table.firstChild ;
 		//拿到成龙的年龄
-		var age = table.firstChild.nextSibling.lastChild.nodeValue ;
+		var age = table.firstChild.nextSibling.lastChild.firstChild.nodeValue ;
 		alert(age);
 	</script>
  </body>

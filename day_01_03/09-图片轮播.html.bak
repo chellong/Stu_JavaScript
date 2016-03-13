@@ -98,7 +98,7 @@
 	</script>
  <body onload = "init()">
 	 <div align = "center">
-		<img src = "images/photo_01.jpg" width="780" height="480" id = "img">
+		<img src = "images/photo_01.jpg" id = "img">
 		<div id = "d">
 			<label id = "i1">&nbsp;1&nbsp;</label>
 			<label id = "i2">&nbsp;2&nbsp;</label>

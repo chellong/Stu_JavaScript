@@ -21,7 +21,7 @@
 		//alert(h1.innerHTML) ;
 		//alert(h1.firstChild.nodeValue) ;
 		//alert(h1.lastChild.nodeValue) ;
-		//alert(h1.innerText) ;
+		 //alert(h1.innerText) ;
 
 	//-->
 	</script>
